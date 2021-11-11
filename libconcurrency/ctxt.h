@@ -90,7 +90,7 @@ static void _infer_jmpbuf_offsets(struct _probe_data *pb)
 		if (pi != samePCi) {
 			if (pi != sameAR[i]) {
 				perror("No Thread Launch\n" );
-				exit(-1);
+				exit(-1); 
 			}
 			if ((pi - samePCi) == prior_diff) {
 				/* the i'th pointer field in jmp_buf needs to be save/restored */

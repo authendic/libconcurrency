@@ -1,3 +1,4 @@
+年久失修！！
 # libconcurrency
 
 A proof-of-concept lightweight concurrency library for C, featuring symmetric [coroutines](http://en.wikipedia.org/wiki/Coroutine) as the main control flow abstraction. The library is similar to [State Threads](http://state-threads.sourceforge.net/), but using coroutines instead of green threads. This simplifies inter-procedural calls and largely eliminates the need for mutexes and semaphores for signaling.
@@ -53,4 +54,4 @@ Here's a basic reader/writer that simply echoes characters read to the screen:
       coro_call(cw, cnone);
       return 0;
     }
-  
+
